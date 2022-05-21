@@ -2,9 +2,11 @@
 *Find all API in:* src/route/web.js
 
 *Completed:*
-    * Build database
-    * Build system follow MVC model
-    * API is group by user authorization
-    * APIs are built for all impotant function of a sale web such as: login, register, search product, create bill, add product, update informations, delete products, etc
+<ul>
+  <li>Build database</li>
+  <li>Build system follow MVC model</li>
+  <li>API is group by user authorization</li>
+  <li>APIs are built for all impotant function of a sale web such as: login, register, search product, create bill, add product, update informations, delete products, etc</li>
+</ul>
 
 *Using tech:* Javascript, nodejs, sequelize, mysql, express.js
