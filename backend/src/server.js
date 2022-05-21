@@ -4,9 +4,26 @@ import connectDB from './config/connectDB';
 import viewEngine from "./config/viewEngine";
 import initWebRoutes from "./route/web";
 
+const cors = require('cors');
 require('dotenv').config(); //giup chay duoc process.env
 
 let app = express();
+
+app.use(
+    cors({
+      origin: true,
+      optionsSuccessStatus: 200,
+      credentials: true,
+    })
+  );
+  app.options(
+    '*',
+    cors({
+      origin: true,
+      optionsSuccessStatus: 200,
+      credentials: true,
+    })
+  );
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));

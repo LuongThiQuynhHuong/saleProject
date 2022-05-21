@@ -14,7 +14,8 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   ItemInBill.init({
-    billId: DataTypes.INTEGER,
+    billId:DataTypes.INTEGER,
+    userId: DataTypes.INTEGER,
     productId: DataTypes.INTEGER,
     qty: DataTypes.INTEGER,
     total: DataTypes.FLOAT
